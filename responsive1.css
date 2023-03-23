@@ -1,0 +1,53 @@
+ .homer{
+    padding: 0%;
+    margin: 0%;
+    overflow: hidden;
+    width: 500px;
+    height: 500px;
+    border: 2px solid black;
+}
+    .homer img{
+        width: 1000px;
+        height: 1000px;
+        
+    }
+
+@media only screen and (min-width: 1400px) and (max-width: 1600px) {
+  .homer img{
+    margin-left: -500px;
+    }
+}
+@media only screen and (min-width: 1200px) and (max-width: 1400px) {
+  .homer img {
+    margin-top: -500px;
+    }
+}  
+
+@media only screen and (min-width: 1000px) and (max-width: 1200px) {
+  .homer img {
+    margin-left: -500px;
+    margin-top: -500px;
+    }
+}  
+
+@media only screen and (min-width: 800px) and (max-width: 1000px) {
+  .homer img {
+    margin-top: -500px;
+    }
+}  
+
+@media only screen and (min-width: 600px) and (max-width: 800px) {
+  .homer img {
+    margin-left: -500px;
+    }
+}   
+
+/* 
+If the browser screen width is greater than 1600 pixels, display the top-left image of homer.jpg
+If the browser screen width is greater than 1400 pixels but less than or equal to 1600 pixels, display the top-right image of homer.jpg
+If the browser screen width is greater than 1200 pixels but less than or equal to 1400 pixels, display the bottom-left image of homer.jpg
+If the browser screen width is greater than 1000 pixels but less than or equal to 1200 pixels, display the last image, bottom-right of homer.jpg
+If the browser screen width is greater than 800 pixels but less than or equal to 1000 pixels, display the bottom-left image of homer.jpg
+If the browser screen width is greater than 600 pixels but less than or equal to 800 pixels, display the top-right image of homer.jpg
+If the browser screen width is less than or equal to 600 pixels, display the top-left image of homer.jpg
+The entire image homer.jpg is 625px x 625px. */
